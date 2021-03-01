@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerMasterPage.master.cs" Inherits="MovieCruiser.CustomerMasterPage" %>
+
+<%@ Register Src="~/customerheader.ascx" TagPrefix="h1" TagName="Header1" %>
+<%@ Register Src="~/footer.ascx" TagPrefix="footer" TagName="footer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+         <h1:Header1 id="h1" runat="server"></h1:Header1>
+          <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    <br />
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+           
+        <footer:footer id="footer" runat="server"></footer:footer>
+          
+        
+    </form>
+</body>
+</html>
